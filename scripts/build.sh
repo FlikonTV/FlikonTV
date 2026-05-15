@@ -12,6 +12,6 @@ cp "$ROOT_DIR/src/main.js" "$DIST_DIR/assets/main.js"
 cp "$ROOT_DIR/src/style.css" "$DIST_DIR/assets/style.css"
 
 # Rewire built index references to assets path.
-sed -i 's|/src/main.ts|./assets/main.js|g' "$DIST_DIR/index.html"
+sed -i 's|/src/main.js|./assets/main.js|g' "$DIST_DIR/index.html"
 
 echo "Build complete: $DIST_DIR"
